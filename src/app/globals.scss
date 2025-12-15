@@ -1,0 +1,16 @@
+/* globals.scss */
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Plugin CSS from node_modules */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "animate.css/animate.min.css";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+/* Your custom SCSS file */
+// Example: if your SCSS is in src/assets/scss/style.scss and globals.scss is in src/app
+@import "../../public/assets/scss/style.scss";
