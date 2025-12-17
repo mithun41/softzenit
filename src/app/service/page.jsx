@@ -130,7 +130,7 @@ const WebDevelopmentPage = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section
-        className={`relative pt-32 pb-20 lg:pt-24 lg:pb-32 bg-gradient-to-br ${PRIMARY_GRADIENT} text-white overflow-hidden`}
+        className={`relative pt-20 pb-20 lg:pt-24 lg:pb-32 bg-gradient-to-br ${PRIMARY_GRADIENT} text-white overflow-hidden`}
       >
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-fuchsia-500/20 rounded-full blur-3xl"></div>
@@ -172,12 +172,12 @@ const WebDevelopmentPage = () => {
                   Start Your Project
                   <FiArrowRight className="w-5 h-5" />
                 </a>
-                <a
-                  href="#services"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border-2 border-white/20 hover:bg-white/20 transition-all duration-300"
+                <Link
+                  href="/projects/web"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300"
                 >
-                  View Services
-                </a>
+                  View Projects
+                </Link>
               </div>
             </motion.div>
 

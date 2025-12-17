@@ -43,7 +43,7 @@ const BannerFive = () => {
                   businesses to grow, scale, and succeed in the digital era.
                 </p>
                 <Link
-                  className="btn btn-border-base-2"
+                  className="btn btn-border-base-2 hidden "
                   data-aos="fade-right"
                   data-aos-delay="450"
                   data-aos-duration="1500"
@@ -65,8 +65,6 @@ const BannerFive = () => {
                     <img src="assets/img/video.svg" alt="img" />{" "}
                     <h6 className="d-inline-block text-white">how we work</h6>
                   </Link>
-
-                  <div></div>
                 </div>
               </div>
             </div>

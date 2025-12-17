@@ -30,12 +30,12 @@ const NavbarFour = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md shadow">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link href="/" onClick={closeMenu}>
-              <img src="/assets/img/logo-two.png" alt="Logo" className="h-10" />
+              <img src="/assets/img/logo-two.png" alt="Logo" className="h-9" />
             </Link>
 
             {/* Desktop Menu */}
@@ -73,7 +73,7 @@ const NavbarFour = () => {
             <div className="hidden lg:block">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
               >
                 Contact Us
                 <FaArrowRight />
@@ -83,30 +83,33 @@ const NavbarFour = () => {
             {/* Mobile Toggle */}
             <button
               onClick={() => setOpen(!open)}
-              className="lg:hidden flex flex-col gap-1.5 z-50"
+              aria-label="Toggle Menu"
+              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 bg-white hover:bg-gray-100 transition z-50"
             >
-              <span
-                className={`w-6 h-0.5 bg-gray-800 transition ${
-                  open ? "rotate-45 translate-y-2" : ""
-                }`}
-              />
-              <span
-                className={`w-6 h-0.5 bg-gray-800 transition ${
-                  open ? "opacity-0" : ""
-                }`}
-              />
-              <span
-                className={`w-6 h-0.5 bg-gray-800 transition ${
-                  open ? "-rotate-45 -translate-y-2" : ""
-                }`}
-              />
+              <div className="relative w-5 h-5">
+                <span
+                  className={`absolute left-0 top-1 w-5 h-0.5 bg-gray-800 transition-all duration-300 ${
+                    open ? "rotate-45 top-2.5" : ""
+                  }`}
+                />
+                <span
+                  className={`absolute left-0 top-2.5 w-5 h-0.5 bg-gray-800 transition-all duration-300 ${
+                    open ? "opacity-0" : ""
+                  }`}
+                />
+                <span
+                  className={`absolute left-0 top-4 w-5 h-0.5 bg-gray-800 transition-all duration-300 ${
+                    open ? "-rotate-45 top-2.5" : ""
+                  }`}
+                />
+              </div>
             </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden fixed top-20 left-0 right-0 bg-white shadow-lg transition-all duration-300 ${
+          className={`lg:hidden fixed top-16 left-0 right-0 bg-white shadow-md transition-all duration-300 ${
             open
               ? "opacity-100 translate-y-0"
               : "opacity-0 -translate-y-4 pointer-events-none"
@@ -155,7 +158,7 @@ const NavbarFour = () => {
             <Link
               onClick={closeMenu}
               href="/contact"
-              className="mt-4 inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg"
+              className="mt-4 inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
             >
               Contact Us
               <FaArrowRight />
@@ -165,7 +168,7 @@ const NavbarFour = () => {
       </nav>
 
       {/* Spacer */}
-      <div className="h-20" />
+      <div className="h-16" />
     </>
   );
 };

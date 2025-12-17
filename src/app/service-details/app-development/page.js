@@ -246,12 +246,12 @@ const MobileAppPage = () => {
                   Start Your Project
                   <FiArrowRight className="w-5 h-5" />
                 </a>
-                <a
-                  href="#services"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border-2 border-white/20 hover:bg-white/20 transition-all duration-300"
+                <Link
+                  href="/projects/app"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300"
                 >
-                  View Services
-                </a>
+                  View Projects
+                </Link>
               </div>
 
               {/* Stats */}
@@ -351,7 +351,7 @@ const MobileAppPage = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-4 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -392,7 +392,7 @@ const MobileAppPage = () => {
       </section>
 
       {/* App Types Section */}
-      <section id="services" className="py-24 bg-white">
+      <section id="services" className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

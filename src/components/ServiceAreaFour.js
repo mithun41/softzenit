@@ -8,7 +8,7 @@ const ServiceAreaFour = () => {
     <>
       {/*=================== service area start ===================*/}
       <div
-        className="service-area bg-cover pd-top-110 pd-bottom-80 pd-top-100 pd-bottom-80"
+        className="service-area bg-cover py-10"
         style={{ backgroundImage: 'url("./assets/img/bg/3.png")' }}
       >
         <div className="container">

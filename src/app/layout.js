@@ -6,6 +6,7 @@ import "./globals.scss";
 import NavBar from "@/components/NavBar";
 import FooterOne from "@/components/FooterOne";
 import NavbarFour from "@/components/NavbarFour";
+import MobileBottomNav from "@/components/MobileBottomNav";
 
 export const metadata = {
   title: "Service || AgileTech - IT Solutions & Technology NEXT JS Template",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
 
         {/* Footer will appear on every page */}
         <FooterOne />
+        <MobileBottomNav />
       </body>
     </html>
   );

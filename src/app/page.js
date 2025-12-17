@@ -21,13 +21,12 @@ const page = () => {
       <BannerFive />
 
       {/* About Area One */}
-      <AboutAreaOne />
 
       {/* Service Area One */}
       <ServiceAreaFour />
 
       {/* FAQ Area One */}
-      <FaqAreaTwo />
+      {/* <FaqAreaTwo /> */}
 
       {/* Case Study Area One */}
       <CaseStudyAreaOne />
@@ -37,6 +36,7 @@ const page = () => {
 
       <ProjectAreaOne />
       <WorkingProcessSection />
+      <AboutAreaOne />
 
       {/* Counter Area One */}
       {/* <CounterAreaOne /> */}

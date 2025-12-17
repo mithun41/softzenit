@@ -48,12 +48,13 @@ const ProjectSection = () => {
   const [activeImage, setActiveImage] = useState(null);
 
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="pt-10 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col items-center justify-center max-w-2xl mb-16 mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight">
-            Let’s Explore Our Creative Works
+            Let’s Explore <span className="text-blue-600">Our</span> Creative
+            Works
           </h2>
           <p className=" text-gray-600">
             A selection of projects where strategy, design, and technology work

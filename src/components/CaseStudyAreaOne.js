@@ -63,7 +63,7 @@ const MobileAppSliderSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-50 overflow-hidden relative">
+    <section className=" bg-gray-50 overflow-hidden relative">
       {/* Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
         <span className="text-blue-600 text-sm font-semibold uppercase">
@@ -90,11 +90,11 @@ const MobileAppSliderSection = () => {
                 exit="exit"
                 transition={{ duration: 0.6, ease: "easeOut" }}
               >
-                <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-snug">
+                <h3 className="text-xl sm:text-3xl font-bold text-gray-900 leading-snug">
                   {currentItem.title}
                 </h3>
 
-                <p className="mt-5 text-base sm:text-lg text-gray-600 max-w-xl">
+                <p className="mt-3 text-base sm:text-lg text-gray-600 max-w-xl">
                   {currentItem.description}
                 </p>
 
