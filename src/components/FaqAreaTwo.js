@@ -25,7 +25,7 @@ export default function FaqAreaTwo() {
   };
 
   return (
-    <div className="py-20 lg:py-32 bg-white">
+    <div className="py-12 lg:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* LEFT (FAQ) */}

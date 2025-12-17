@@ -8,7 +8,7 @@ const ServiceAreaFour = () => {
     <>
       {/*=================== service area start ===================*/}
       <div
-        className="service-area bg-cover pd-top-120 pd-bottom-90 pd-top-110 pd-bottom-90"
+        className="service-area bg-cover pd-top-110 pd-bottom-80 pd-top-100 pd-bottom-80"
         style={{ backgroundImage: 'url("./assets/img/bg/3.png")' }}
       >
         <div className="container">
@@ -27,8 +27,19 @@ const ServiceAreaFour = () => {
             {serviceList.slice(0, 4).map((service, index) => (
               <div className="col-xl-3 col-md-6" key={index}>
                 <div className="single-work-process-inner">
-                  <div className="thumb mb-4">
-                    <img src={service.img} alt={service.title} />
+                  <div
+                    className="thumb mb-4"
+                    style={{ height: "200px", overflow: "hidden" }}
+                  >
+                    <img
+                      src={service.img}
+                      alt={service.title}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
                   </div>
                   <div className="details">
                     <h5 className="mb-3">{service.title}</h5>

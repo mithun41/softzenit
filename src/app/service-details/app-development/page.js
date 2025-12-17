@@ -556,10 +556,10 @@ const MobileAppPage = () => {
                 <FiArrowRight className="w-5 h-5" />
               </Link>
               <Link
-                href="/portfolio"
+                href="/projects/app"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300"
               >
-                View Case Studies
+                View Projects
               </Link>
             </div>
           </motion.div>
