@@ -14,6 +14,7 @@ import {
   Target,
   Award,
 } from "lucide-react";
+import Link from "next/link";
 
 const features = [
   "Custom CRM & ERP Development",
@@ -160,18 +161,18 @@ const ERPCRMPage = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                <a
-                  href="#contact"
+                <Link
+                  href="/contact"
                   className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 text-white font-semibold rounded-xl transition-all duration-300 shadow-xl hover:scale-105 text-sm sm:text-base"
                 >
                   Request Demo <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
-                </a>
-                <a
+                </Link>
+                {/* <a
                   href="#solutions"
                   className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border-2 border-white/20 hover:bg-white/20 transition-all duration-300 text-sm sm:text-base"
                 >
                   View Solutions
-                </a>
+                </a> */}
               </div>
             </div>
 
@@ -349,12 +350,6 @@ const ERPCRMPage = () => {
               >
                 Schedule Consultation{" "}
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
-              <a
-                href="/portfolio"
-                className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300 text-sm sm:text-base"
-              >
-                View Success Stories
               </a>
             </div>
           </div>

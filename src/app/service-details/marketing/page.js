@@ -422,10 +422,13 @@ const DigitalMarketingPage = () => {
             <p className="text-2xl text-white/90 mb-10">
               Let's create a winning strategy for your brand
             </p>
-            <button className="px-12 py-5 bg-white text-purple-600 rounded-xl font-bold text-lg shadow-2xl hover:shadow-white/30 hover:scale-105 transition-all duration-300 inline-flex items-center gap-3">
+            <Link
+              href="/contact"
+              className="px-12 py-5 bg-white text-purple-600 rounded-xl font-bold text-lg shadow-2xl hover:shadow-white/30 hover:scale-105 transition-all duration-300 inline-flex items-center gap-3"
+            >
               Get Your Free Marketing Audit
               <ArrowRight className="w-6 h-6" />
-            </button>
+            </Link>
           </motion.div>
         </div>
       </section>

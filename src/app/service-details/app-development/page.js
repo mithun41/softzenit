@@ -255,7 +255,7 @@ const MobileAppPage = () => {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 mt-12">
+              {/* <div className="grid grid-cols-3 gap-6 mt-12">
                 <div>
                   <div className="text-4xl font-bold text-pink-400">150+</div>
                   <div className="text-sm text-gray-400 mt-1">
@@ -272,7 +272,7 @@ const MobileAppPage = () => {
                   <div className="text-4xl font-bold text-pink-400">5M+</div>
                   <div className="text-sm text-gray-400 mt-1">Downloads</div>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
 
             <motion.div
