@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { X, Figma } from "lucide-react";
+import Link from "next/link";
+import { prototype } from "postcss/lib/previous-map";
 
 const projects = [
   {
@@ -13,28 +15,34 @@ const projects = [
     figmaUrl:
       "https://www.figma.com/design/gn09sY6vzGMtGCAxodR4ma/Office---ShopZen-%E2%80%93-E-Commerce-App",
     category: "E-commerce",
+    prototype:
+      "https://www.figma.com/proto/gn09sY6vzGMtGCAxodR4ma/Office---ShopZen-%E2%80%93-E-Commerce-App?node-id=822-9338&t=OhzRL4kCC8J9uGoX-0&scaling=scale-down&content-scaling=fixed&page-id=792%3A775&starting-point-node-id=806%3A4030",
     tags: ["Onboarding", "Admin", "Auth"],
   },
   {
     id: 2,
     image: "/assets/img/images/app5.jpeg",
-    title: "ShopZen Consumer App",
+    title: "ShopZen Seller Center",
     description:
       "A multivendor shopping app designed for clarity, speed, and higher conversions.",
     figmaUrl:
       "https://www.figma.com/design/py0wkvLk8DgbVnopW5v9ja/Office---ShopZen-Seller-Center",
     category: "E-commerce",
+    prototype:
+      "https://www.figma.com/proto/py0wkvLk8DgbVnopW5v9ja/Office---ShopZen-Seller-Center?node-id=1-251&t=Uv0YxEmXdvzcvHZo-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
     tags: ["B2C", "Cart", "Checkout"],
   },
   {
     id: 3,
     image: "/assets/img/images/app6.jpeg",
-    title: "SoftRide",
+    title: "SoftRide - Ride Sharing App",
     description:
       "A ride-sharing app with real-time tracking, pricing clarity, and smooth booking flows.",
     figmaUrl:
       "https://www.figma.com/design/GZkY7PekiVLwGGr2M7zTJk/Office---SoftRide",
     category: "Ride Sharing",
+    prototype:
+      "https://www.figma.com/proto/GZkY7PekiVLwGGr2M7zTJk/Office---SoftRide?node-id=551-17156&t=xfLNAccwrlBriNE7-0&scaling=scale-down&content-scaling=fixed&page-id=551%3A17154&starting-point-node-id=551%3A17238",
     tags: ["Maps", "Wallet", "Tracking"],
   },
 ];
@@ -53,26 +61,26 @@ export default function MobileAppProjectsPage() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="py-12 sm:py-16 px-4 text-center border-b">
+      <section className="py-8 sm:py-12 px-4 text-center border-b">
         <p className="text-emerald-600 font-semibold uppercase text-xs sm:text-sm">
-          App Design Projects
+          Projects
         </p>
-        <h1 className="text-2xl sm:text-4xl font-extrabold mt-3">
+        <h1 className="text-2xl sm:text-4xl font-extrabold ">
           Mobile App Designs
         </h1>
-        <p className="mt-4 text-gray-500 max-w-xl mx-auto text-sm sm:text-base">
+        <p className="mt-3 text-gray-500 max-w-xl mx-auto text-sm sm:text-base">
           Carefully crafted mobile experiences focused on usability and clarity.
         </p>
       </section>
 
       {/* Filter */}
-      <div className="sticky top-0 bg-white/90 backdrop-blur border-b z-30">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex flex-wrap gap-2 justify-center">
+      <div className="sticky top-0 bg-white/90 backdrop-blur z-30">
+        <div className="max-w-6xl mx-auto px-4  flex flex-wrap gap-2 justify-center">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition ${
+              className={`px-4 py-2 border border-green-500 rounded-full text-xs sm:text-sm font-semibold transition ${
                 selectedCategory === cat
                   ? "bg-emerald-600 text-white"
                   : "bg-gray-100 text-gray-600"
@@ -98,11 +106,11 @@ export default function MobileAppProjectsPage() {
               className="w-full lg:w-1/2 order-1 cursor-zoom-in"
               onClick={() => setActiveImage(project.image)}
             >
-              <div className="aspect-[4/3] sm:aspect-[16/10] rounded-xl bg-gray-50 flex items-center justify-center overflow-hidden">
+              <div className="aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="max-h-full w-auto object-contain"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -140,12 +148,13 @@ export default function MobileAppProjectsPage() {
                 >
                   View Design <Figma size={16} />
                 </a>
-                <button
-                  onClick={() => setActiveImage(project.image)}
+                <Link
+                  target="_blank"
+                  href={project.prototype}
                   className="inline-flex items-center justify-center px-6 py-3 rounded-lg border text-gray-700 font-semibold"
                 >
-                  Preview
-                </button>
+                  View Demo
+                </Link>
               </div>
             </div>
           </div>

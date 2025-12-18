@@ -78,22 +78,22 @@ const FooterOne = () => {
 
                   <ul className="social-media">
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.facebook.com/softzenit/">
                         <FaFacebookF />
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.linkedin.com/company/softzen-it">
                         <FaTwitter />
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.instagram.com/softzen.it/">
                         <FaInstagram />
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.youtube.com/@soft.zen_it">
                         <FaYoutube />
                       </Link>
                     </li>

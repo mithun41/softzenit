@@ -62,7 +62,7 @@ const NavbarFour = () => {
                 href="/service-details/marketing"
                 className={navClass("/service-details/marketing")}
               >
-                Marketing
+                Digital Marketing
               </Link>
               <Link href="/about" className={navClass("/about")}>
                 About

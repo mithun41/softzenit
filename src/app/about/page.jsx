@@ -10,7 +10,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
-/* ================= COLORS (ERP / CRM MATCH) ================= */
+/* ================= COLORS ================= */
 const PRIMARY_GRADIENT = "from-teal-600 to-blue-700";
 const PRIMARY_BUTTON =
   "from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700";
@@ -42,21 +42,36 @@ const teamMembers = [
     role: "Founder",
     image: "/assets/img/images/team1.jpg",
     bio: "Founder of SoftZen IT with 25+ years of experience in the garments accessories industry, bringing innovation and growth to technology solutions.",
-    socials: { facebook: "#", youtube: "#", instagram: "#", linkedin: "#" },
+    socials: {
+      facebook: "https://www.facebook.com/abdus.sattar.165033",
+      youtube: "https://www.youtube.com/@soft.zen_it",
+      instagram: "https://www.instagram.com/softzen.it/",
+      linkedin: "https://www.linkedin.com/company/softzen-it/",
+    },
   },
   {
     name: "Md. Abdul Gaffar",
     role: "CEO",
     image: "/assets/img/images/team2.jpg",
     bio: "CEO of SoftZen IT and leader of Ocean Accessories Ltd. & R.K. Garments, with 25+ years of proven management and strategic vision experience.",
-    socials: { facebook: "#", youtube: "#", instagram: "#", linkedin: "#" },
+    socials: {
+      facebook: "https://www.facebook.com/gaffar.khokon",
+      youtube: "https://www.youtube.com/@soft.zen_it",
+      instagram: "https://www.instagram.com/softzen.it/",
+      linkedin: "https://www.linkedin.com/company/softzen-it/",
+    },
   },
   {
     name: "Md. Nuruzzaman",
     role: "COO",
     image: "/assets/img/images/team3.jpg",
     bio: "COO of SoftZen IT, ensuring smooth operations and efficiency. Skilled in management with experience from leading garment accessory companies.",
-    socials: { facebook: "#", youtube: "#", instagram: "#", linkedin: "#" },
+    socials: {
+      facebook: "https://www.facebook.com/nuruzzamanrubel07",
+      youtube: "https://www.youtube.com/@soft.zen_it",
+      instagram: "https://www.instagram.com/softzen.it/",
+      linkedin: "https://www.linkedin.com/company/softzen-it/",
+    },
   },
 ];
 
@@ -64,7 +79,7 @@ const teamMembers = [
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* ================= HERO ================= */}
+      {/* HERO */}
       <section
         className={`relative pt-28 pb-28 bg-gradient-to-br ${PRIMARY_GRADIENT} text-white`}
       >
@@ -101,7 +116,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ================= VALUES ================= */}
+      {/* VALUES */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
@@ -126,8 +141,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ================= TEAM ================= */}
-
+      {/* TEAM */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-extrabold mb-4">Leadership Team</h2>
@@ -150,14 +164,22 @@ export default function AboutPage() {
                   className="w-36 h-36 rounded-full mx-auto object-cover mb-6"
                 />
                 <h3 className="text-xl font-bold">{m.name}</h3>
-                <p className={`${ACCENT_TEXT} font-semibold mb-6`}>{m.role}</p>
-                <p>{m.bio}</p>
+                <p className={`${ACCENT_TEXT} font-semibold mb-4`}>{m.role}</p>
+                <p className="text-gray-600 mb-6">{m.bio}</p>
 
                 <div className="flex justify-center gap-3">
-                  {m.socials.facebook && <Social Icon={FaFacebookF} />}
-                  {m.socials.youtube && <Social Icon={FaYoutube} />}
-                  {m.socials.instagram && <Social Icon={FaInstagram} />}
-                  {m.socials.linkedin && <Social Icon={FaLinkedinIn} />}
+                  {m.socials.facebook && (
+                    <Social Icon={FaFacebookF} href={m.socials.facebook} />
+                  )}
+                  {m.socials.youtube && (
+                    <Social Icon={FaYoutube} href={m.socials.youtube} />
+                  )}
+                  {m.socials.instagram && (
+                    <Social Icon={FaInstagram} href={m.socials.instagram} />
+                  )}
+                  {m.socials.linkedin && (
+                    <Social Icon={FaLinkedinIn} href={m.socials.linkedin} />
+                  )}
                 </div>
               </motion.div>
             ))}
@@ -165,7 +187,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ================= CTA ================= */}
+      {/* CTA */}
       <section
         className={`py-24 bg-gradient-to-br ${PRIMARY_GRADIENT} text-white text-center`}
       >
@@ -185,10 +207,12 @@ export default function AboutPage() {
 }
 
 /* ================= SOCIAL ICON ================= */
-function Social({ Icon }) {
+function Social({ Icon, href }) {
   return (
     <a
-      href="#"
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-white hover:bg-gradient-to-br from-teal-500 to-blue-600 transition"
     >
       <Icon />

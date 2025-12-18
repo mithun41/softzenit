@@ -20,7 +20,7 @@ const MobileBottomNav = () => {
           <span className="text-xs">Home</span>
         </Link>
         <a
-          href="https://wa.me/01622049579"
+          href="https://wa.me/+8801622049579"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center text-gray-600 hover:text-green-600"
