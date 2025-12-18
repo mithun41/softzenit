@@ -143,19 +143,10 @@ const FooterOne = () => {
                       <FaArrowRight /> About Us
                     </Link>
                   </li>
+
                   <li>
-                    <Link href="#">
-                      <FaArrowRight /> Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <FaArrowRight /> Terms & Conditions
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <FaArrowRight /> Help & Support
+                    <Link href="/faq">
+                      <FaArrowRight /> FAQ
                     </Link>
                   </li>
                 </ul>
@@ -179,7 +170,7 @@ const FooterOne = () => {
                   </li>
                   <li className="flex gap-3">
                     <FaMapMarkerAlt className="mt-1" />
-                    Dhaka, Bangladesh
+                    House 41, Road 13, Block D, Banani Dhaka 1213
                   </li>
                 </ul>
               </div>

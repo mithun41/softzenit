@@ -32,6 +32,7 @@ const ServiceAreaFour = () => {
                     style={{ height: "200px", overflow: "hidden" }}
                   >
                     <img
+                      className="rounded-lg"
                       src={service.img}
                       alt={service.title}
                       style={{

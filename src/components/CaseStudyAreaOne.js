@@ -6,6 +6,7 @@ import { FcApproval } from "react-icons/fc";
 import { MdArrowForward } from "react-icons/md";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 /* ---------------- Slider Data ---------------- */
 const sliderData = [
@@ -108,15 +109,15 @@ const MobileAppSliderSection = () => {
                 </ul>
 
                 <div className="mt-10">
-                  <button
-                    onClick={handleButtonClick}
+                  <Link
+                    href="/contact"
                     className="inline-flex items-center gap-2 px-7 py-3
                                text-sm font-semibold text-white bg-blue-600
                                rounded-md hover:bg-blue-700 transition"
                   >
                     Get Started
                     <MdArrowForward className="h-4 w-4" />
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
 

@@ -103,14 +103,14 @@ export default function MobileAppProjectsPage() {
           >
             {/* Image */}
             <div
-              className="w-full lg:w-1/2 order-1 cursor-zoom-in"
+              className="w-full lg:w-1/2 order-1 cursor-zoom-in "
               onClick={() => setActiveImage(project.image)}
             >
-              <div className="aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden">
+              <div className="aspect-[4/3] sm:aspect-[16/10] rounded-xl   overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover "
                 />
               </div>
             </div>

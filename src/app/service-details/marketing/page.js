@@ -15,6 +15,7 @@ import {
   Award,
   Clock,
 } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const DigitalMarketingPage = () => {
@@ -172,12 +173,15 @@ const DigitalMarketingPage = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="px-8 py-4 bg-white text-purple-600 rounded-xl font-bold shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all duration-300">
-                Get Free Audit
-              </button>
-              <button className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-xl font-bold border-2 border-white/30 hover:bg-white/20 transition-all duration-300">
+              <Link
+                href="/contact"
+                className="px-8 py-4 bg-white text-purple-600 rounded-xl font-bold shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all duration-300"
+              >
+                Get Started
+              </Link>
+              {/* <button className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-xl font-bold border-2 border-white/30 hover:bg-white/20 transition-all duration-300">
                 View Our Work
-              </button>
+              </button> */}
             </div>
 
             <div className="mt-12 flex gap-8">

@@ -43,7 +43,7 @@ const NavbarFour = () => {
               <Link href="/" className={navClass("/")}>
                 Home
               </Link>
-              <Link href="/service" className={navClass("/service")}>
+              <Link href="/web" className={navClass("/web")}>
                 Web
               </Link>
               <Link
@@ -86,20 +86,20 @@ const NavbarFour = () => {
               aria-label="Toggle Menu"
               className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 bg-white hover:bg-gray-100 transition z-50"
             >
-              <div className="relative w-5 h-5">
+              <div className="relative w-5 h-4 flex flex-col justify-center">
                 <span
-                  className={`absolute left-0 top-1 w-5 h-0.5 bg-gray-800 transition-all duration-300 ${
-                    open ? "rotate-45 top-2.5" : ""
+                  className={`absolute w-full h-0.5 bg-gray-800 transition-all duration-300 ease-in-out ${
+                    open ? "rotate-45 translate-y-0" : "-translate-y-1.5"
                   }`}
                 />
                 <span
-                  className={`absolute left-0 top-2.5 w-5 h-0.5 bg-gray-800 transition-all duration-300 ${
-                    open ? "opacity-0" : ""
+                  className={`absolute w-full h-0.5 bg-gray-800 transition-all duration-300 ease-in-out ${
+                    open ? "opacity-0 scale-0" : "opacity-100 scale-100"
                   }`}
                 />
                 <span
-                  className={`absolute left-0 top-4 w-5 h-0.5 bg-gray-800 transition-all duration-300 ${
-                    open ? "-rotate-45 top-2.5" : ""
+                  className={`absolute w-full h-0.5 bg-gray-800 transition-all duration-300 ease-in-out ${
+                    open ? "-rotate-45 translate-y-0" : "translate-y-1.5"
                   }`}
                 />
               </div>
@@ -121,7 +121,7 @@ const NavbarFour = () => {
             </Link>
             <Link
               onClick={closeMenu}
-              href="/service"
+              href="/web"
               className={navClass("/service")}
             >
               Web

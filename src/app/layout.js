@@ -2,26 +2,29 @@ import BootstrapInit from "@/helper/BootstrapInit";
 import "react-modal-video/scss/modal-video.scss";
 import "./font.css";
 import "./globals.scss";
-
-import NavBar from "@/components/NavBar";
 import FooterOne from "@/components/FooterOne";
 import NavbarFour from "@/components/NavbarFour";
 import MobileBottomNav from "@/components/MobileBottomNav";
-
 export const metadata = {
-  title: "Service || AgileTech - IT Solutions & Technology NEXT JS Template",
-  description:
-    "Agiletech provide you to build the best agency, app, business, digital, IT services, IT solutions, network solution, startup, technology, technology company, technology service template.",
+  title: "Softzen IT",
+  description: "Agiletech provide you to build...",
+  icons: {
+    icon: "/favicon.ico", // ফাইলটি src/app অথবা public ফোল্ডারে থাকলে
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <BootstrapInit />
       <body
         suppressHydrationWarning={true}
         className="flex flex-col min-h-screen"
       >
+        {/* Bootstrap initialization should be inside body */}
+        <BootstrapInit />
+
         {/* Navbar will appear on every page */}
         <NavbarFour />
 

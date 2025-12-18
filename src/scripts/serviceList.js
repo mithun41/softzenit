@@ -9,7 +9,7 @@ let serviceList = [
     title: "Web Development",
     des: "We create modern, responsive websites and web applications that deliver seamless user experiences and help businesses thrive online.",
     img: "assets/img/images/service3.png",
-    details: "/service",
+    details: "/web",
   },
   {
     title: "Digital Marketing",

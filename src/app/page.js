@@ -1,15 +1,14 @@
 import AboutAreaOne from "@/components/AboutAreaOne";
 import BannerFive from "@/components/BannerFive";
 import CaseStudyAreaOne from "@/components/CaseStudyAreaOne";
-import FaqAreaTwo from "@/components/FaqAreaTwo";
+import Partner from "@/components/Partner";
 import ProjectAreaOne from "@/components/ProjectAreaOne";
 import ServiceAreaFour from "@/components/ServiceAreaFour";
 import WorkingProcessSection from "@/components/WorkingProcessSection";
 
 export const metadata = {
-  title: "Home || AglieTech - IT Solutions & Technology NEXT JS Template",
-  description:
-    "Agiletech provide you to build the best agency, app, business, digital, it services, it solutions, network solution, startup, technology, technology company, technology service template.",
+  title: "Home || Softzen IT ",
+  description: "Green Wings Smart IT Solutions and Technology Services",
 };
 
 const page = () => {
@@ -30,6 +29,7 @@ const page = () => {
 
       {/* Case Study Area One */}
       <CaseStudyAreaOne />
+      <Partner />
 
       {/* Team Area One */}
       {/* <LatestServicesSection /> */}
