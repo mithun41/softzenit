@@ -9,6 +9,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { useEffect } from "react";
 
 /* ================= COLORS ================= */
 const PRIMARY_GRADIENT = "from-teal-600 to-blue-700";
@@ -77,6 +78,9 @@ const teamMembers = [
 
 /* ================= PAGE ================= */
 export default function AboutPage() {
+  useEffect(() => {
+    document.title = "About | Softzen IT";
+  }, []);
   return (
     <div className="min-h-screen bg-gray-50">
       {/* HERO */}

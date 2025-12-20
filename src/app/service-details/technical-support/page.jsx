@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Headphones,
   Clock,
@@ -18,6 +18,9 @@ import {
 import Link from "next/link";
 
 const TechnicalSupportPage = () => {
+  useEffect(() => {
+    document.title = "Technical Support | Softzen IT";
+  }, []);
   const [openFaq, setOpenFaq] = useState(null);
 
   const features = [

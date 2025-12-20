@@ -16,10 +16,13 @@ import {
   Clock,
 } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const DigitalMarketingPage = () => {
   const [activeTab, setActiveTab] = useState(0);
+  useEffect(() => {
+    document.title = "Digital Marketing | Softzen IT";
+  }, []);
 
   const services = [
     {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Mail, Phone, ArrowRight, Bell } from "lucide-react";
 import emailjs from "emailjs-com";
@@ -87,6 +87,9 @@ const ContactPage = () => {
       text: "+880 1797 933 772",
     },
   ];
+  useEffect(() => {
+    document.title = "Contact | Softzen IT";
+  }, []);
 
   return (
     <section className="py-20 lg:py-28 bg-gray-100 min-h-screen flex items-center justify-center">

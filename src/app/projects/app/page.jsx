@@ -45,9 +45,54 @@ const projects = [
       "https://www.figma.com/proto/GZkY7PekiVLwGGr2M7zTJk/Office---SoftRide?node-id=551-17156&t=xfLNAccwrlBriNE7-0&scaling=scale-down&content-scaling=fixed&page-id=551%3A17154&starting-point-node-id=551%3A17238",
     tags: ["Maps", "Wallet", "Tracking"],
   },
+  {
+    id: 4,
+    image: "/assets/img/images/app7.jpeg",
+    title: "ZenBistro",
+    description:
+      "ZenBistro is a food delivery app that lets you order from local restaurants and get meals delivered fast and easily.",
+    figmaUrl:
+      "https://www.figma.com/design/OoCIknF5QJCtL5QH3hsuPe/Office---ZenBistro---Food-Delivery-app?node-id=1-2&p=f&t=ILjdxaVHg4Odnjut-0",
+    category: "Food Delivery",
+    prototype:
+      "https://www.figma.com/proto/OoCIknF5QJCtL5QH3hsuPe/Office---ZenBistro---Food-Delivery-app?node-id=6-4023&t=A6sWAIRqILT9MfZN-0&scaling=min-zoom&content-scaling=fixed&page-id=1%3A3&starting-point-node-id=6%3A4023",
+    tags: ["Maps", "Wallet", "Tracking"],
+  },
+  {
+    id: 5,
+    image: "/assets/img/images/app8.jpeg",
+    title: "Digit Dash - Educational App",
+    description:
+      "Digit Dash is a kids’ educational app that makes math fun through simple, interactive calculation games.",
+    figmaUrl:
+      "https://www.figma.com/design/GZkY7PekiVLwGGr2M7zTJk/Office---SoftRide",
+    category: "Games",
+    prototype:
+      "https://www.figma.com/proto/GZkY7PekiVLwGGr2M7zTJk/Office---SoftRide?node-id=551-17156&t=xfLNAccwrlBriNE7-0&scaling=scale-down&content-scaling=fixed&page-id=551%3A17154&starting-point-node-id=551%3A17238",
+    tags: ["Math", "Kids", "Games"],
+  },
+  {
+    id: 6,
+    image: "/assets/img/images/app9.jpeg",
+    title: "Track Expense",
+    description:
+      "Track Expense is an app for tracking daily spending and managing everyday financial activities in one place.",
+    figmaUrl:
+      "https://www.figma.com/design/GZkY7PekiVLwGGr2M7zTJk/Office---SoftRide",
+    category: "Ride Sharing",
+    prototype:
+      "https://www.figma.com/proto/GZkY7PekiVLwGGr2M7zTJk/Office---SoftRide?node-id=551-17156&t=xfLNAccwrlBriNE7-0&scaling=scale-down&content-scaling=fixed&page-id=551%3A17154&starting-point-node-id=551%3A17238",
+    tags: ["Maps", "Wallet", "Tracking"],
+  },
 ];
 
-const categories = ["All", "Ride Sharing", "E-commerce"];
+const categories = [
+  "All",
+  "E-commerce",
+  "Ride Sharing",
+  "Food Delivery",
+  "Games",
+];
 
 export default function MobileAppProjectsPage() {
   const [activeImage, setActiveImage] = useState(null);

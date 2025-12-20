@@ -29,6 +29,7 @@ import {
   DiVisualstudio, // Using a development tool icon for TypeScript
 } from "react-icons/di";
 import Head from "next/head";
+import { useEffect } from "react";
 
 // --- Data Definitions (Updated Technologies Array with new Icons) ---
 const features = [
@@ -119,6 +120,9 @@ const process = [
 // --- End Data Definitions ---
 
 const WebDevelopmentPage = () => {
+  useEffect(() => {
+    document.title = "Web Development | Softzen IT";
+  }, []);
   // Define new color utility classes (Indigo/Purple/Pink)
   const PRIMARY_GRADIENT = "from-indigo-900 via-purple-900 to-fuchsia-900";
   const PRIMARY_BUTTON =
@@ -129,9 +133,6 @@ const WebDevelopmentPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Web Development || Green Wings Smart IT</title>
-      </Head>
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <section

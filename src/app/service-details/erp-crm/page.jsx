@@ -15,6 +15,7 @@ import {
   Award,
 } from "lucide-react";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const features = [
   "Custom CRM & ERP Development",
@@ -129,6 +130,9 @@ const benefits = [
 ];
 
 const ERPCRMPage = () => {
+  useEffect(() => {
+    document.title = "ERP & CRM Solutions | Softzen IT";
+  }, []);
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}

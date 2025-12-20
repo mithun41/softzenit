@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { X, ExternalLink, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
@@ -76,6 +76,9 @@ const categories = [
 ];
 
 const ProjectsPage = () => {
+  useEffect(() => {
+    document.title = "Web Development | Softzen IT";
+  }, []);
   const [activeImage, setActiveImage] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState("All");
 

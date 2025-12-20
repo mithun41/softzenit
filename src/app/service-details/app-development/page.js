@@ -27,6 +27,7 @@ import {
   FaSwift, // Swift Icon
   FaCodeBranch, // Kotlin/Android Icon or general branching
 } from "react-icons/fa6";
+import { useEffect } from "react";
 
 const features = [
   "Native iOS & Android Apps",
@@ -147,54 +148,10 @@ const process = [
   },
 ];
 
-const pricingPlans = [
-  {
-    name: "MVP",
-    price: "$9,999",
-    description: "Minimum Viable Product to test your idea",
-    features: [
-      "Single platform (iOS or Android)",
-      "5-7 core features",
-      "Basic UI/UX design",
-      "App store submission",
-      "2 months development",
-      "1 month support",
-    ],
-  },
-  {
-    name: "Standard",
-    price: "$24,999",
-    description: "Full-featured app for both platforms",
-    features: [
-      "iOS & Android apps",
-      "10-15 features",
-      "Custom design",
-      "User authentication",
-      "Push notifications",
-      "Backend integration",
-      "4 months development",
-      "3 months support",
-    ],
-    popular: true,
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    description: "Complex apps with advanced features",
-    features: [
-      "Native or cross-platform",
-      "Unlimited features",
-      "Advanced integrations",
-      "Real-time functionality",
-      "Analytics & reporting",
-      "Dedicated team",
-      "Priority support",
-      "12 months support",
-    ],
-  },
-];
-
 const MobileAppPage = () => {
+  useEffect(() => {
+    document.title = "App Development | Softzen IT";
+  }, []);
   // Utility classes for easy color reference
   const ACCENT_COLOR_HERO = "text-pink-400";
   const PRIMARY_BUTTON =
