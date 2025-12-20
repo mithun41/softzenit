@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { X, Figma } from "lucide-react";
 import Link from "next/link";
-import { prototype } from "postcss/lib/previous-map";
 
 const projects = [
   {

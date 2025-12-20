@@ -95,7 +95,7 @@ const ProjectsPage = () => {
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center max-w-3xl mx-auto">
             <div className="inline-block mb-4 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold">
-              Portfolio
+              Web Projects
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
               Creative Web

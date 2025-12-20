@@ -1,5 +1,7 @@
-
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {
+  output: "export", // already static export
+  images: {
+    unoptimized: true, // disables default loader
+  },
+};

@@ -171,12 +171,12 @@ const ERPCRMPage = () => {
                 >
                   Request Demo <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </Link>
-                {/* <a
-                  href="#solutions"
+                <Link
+                  href="/projects/erp-crm"
                   className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border-2 border-white/20 hover:bg-white/20 transition-all duration-300 text-sm sm:text-base"
                 >
                   View Solutions
-                </a> */}
+                </Link>
               </div>
             </div>
 

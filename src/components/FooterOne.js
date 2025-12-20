@@ -149,6 +149,12 @@ const FooterOne = () => {
                       <FaArrowRight /> FAQ
                     </Link>
                   </li>
+                  <li>
+                    <Link href="https://crm.softzenit.com/">
+                      <FaArrowRight />
+                      Log In
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
