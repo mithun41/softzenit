@@ -4,7 +4,7 @@ const AboutAreaOne = () => {
   return (
     <>
       {/* ================== AboutAreaOne start  ==================*/}
-      <div className="about-area pd-top-120">
+      <div className="about-area ">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -59,30 +59,27 @@ const AboutAreaOne = () => {
                         <img src="assets/img/icon/2.png" alt="img" />
                       </div>
                       <div className="details">
-                        <h5>Our Ambition</h5>
+                        <h5>Our Vision</h5>
                         <p>
-                          At SoftZen IT, we help businesses grow in the digital
-                          era. We create smart, modern digital solutions:
-                          websites, mobile apps, and scalable software. Our
-                          focus is on empowering clients to compete, innovate,
-                          and achieve results.
+                          We help businesses grow with modern websites, mobile
+                          apps, and scalable software built for real-world
+                          impact.
                         </p>
                       </div>
                     </div>
                   </div>
+
                   <div className="col-md-6">
                     <div className="single-about-inner">
                       <div className="thumb mb-3">
                         <img src="assets/img/icon/3.png" alt="img" />
                       </div>
                       <div className="details">
-                        <h5>Our Ambition</h5>
+                        <h5>Our Approach</h5>
                         <p>
-                          Every project is a partnership — your goals guide our
-                          work. Success is measured by the value we deliver and
-                          the growth we enable. We build tools that are
-                          reliable, user-focused, and designed to unlock real
-                          business potential
+                          We work as partners, not vendors—focused on clarity,
+                          reliability, and results that drive long-term business
+                          value.
                         </p>
                       </div>
                     </div>
