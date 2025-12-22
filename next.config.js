@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // already static export
+  output: "export",
   images: {
-    unoptimized: true, // disables default loader
+    unoptimized: true,
   },
 };
+
+module.exports = nextConfig;
