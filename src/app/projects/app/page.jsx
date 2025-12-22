@@ -83,6 +83,19 @@ const projects = [
       "https://www.figma.com/proto/GZkY7PekiVLwGGr2M7zTJk/Office---SoftRide?node-id=551-17156&t=xfLNAccwrlBriNE7-0&scaling=scale-down&content-scaling=fixed&page-id=551%3A17154&starting-point-node-id=551%3A17238",
     tags: ["Maps", "Wallet", "Tracking"],
   },
+  {
+    id: 7,
+    image: "/assets/img/images/app10.jpeg",
+    title: "ServZen - A service App",
+    description:
+      "ServZen is an on-demand service marketplace that helps users quickly find, book, and pay for trusted home and professional services based on their location.",
+    figmaUrl:
+      "https://www.figma.com/design/pND275bKcdHwA7lrpTiQz6/Office---ServZen---A-service-App?node-id=1-3455&p=f&t=38181VTNVS2STyBi-",
+    category: "Services",
+    prototype:
+      "https://www.figma.com/proto/pND275bKcdHwA7lrpTiQz6/Office---ServZen---A-service-App?node-id=1-1076&t=38181VTNVS2STyBi-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1076",
+    tags: ["On-demand", "Marketplace", "Booking"],
+  },
 ];
 
 const categories = [
@@ -91,6 +104,7 @@ const categories = [
   "Ride Sharing",
   "Food Delivery",
   "Games",
+  "Services",
 ];
 
 export default function MobileAppProjectsPage() {

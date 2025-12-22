@@ -5,6 +5,7 @@ import "./globals.scss";
 import FooterOne from "@/components/FooterOne";
 import NavbarFour from "@/components/NavbarFour";
 import MobileBottomNav from "@/components/MobileBottomNav";
+import ChatBot from "./chatbot/page";
 export const metadata = {
   title: "Softzen IT",
   description: "Agiletech provide you to build...",
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
 
         {/* Navbar will appear on every page */}
         <NavbarFour />
-
+        <ChatBot />
         {/* Main Content */}
         <main className="flex-grow">{children}</main>
 
