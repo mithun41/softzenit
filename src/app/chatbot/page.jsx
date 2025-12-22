@@ -9,8 +9,9 @@ export default function ChatBot() {
   const [loading, setLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const scrollRef = useRef(null);
+  const [showBlimp, setShowBlimp] = useState(true);
 
-  const API_KEY = "AIzaSyD23q9QCc0UczUk5FNmlgC3KQkTz3dT4VE"; // replace with your API key
+  const API_KEY = "AIzaSyBzVmFeiSRn8NJJ_Z2iwHHI8QV-S6qsBU8";
   const genAI = new GoogleGenerativeAI(API_KEY);
 
   useEffect(() => {
@@ -100,12 +101,27 @@ User Question: ${userText}`,
     <>
       {/* Floating Chat Button */}
       {!isOpen && (
-        <button
-          onClick={() => setIsOpen(true)}
-          className="fixed bottom-32 right-5 z-[999] w-14 h-14 rounded-full bg-gradient-to-br from-indigo-500 to-cyan-500 text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300"
-        >
-          <MessageCircle className="w-7 h-7" />
-        </button>
+        <div className="fixed bottom-32 right-5 z-[999] flex flex-col items-end gap-2">
+          {/* Blimp */}
+          {showBlimp && (
+            <div className="bg-slate-900 text-white text-xs px-3 py-1.5 rounded-lg shadow-lg animate-bounce">
+              Chat with us 👋
+            </div>
+          )}
+
+          <button
+            onClick={() => {
+              setIsOpen(true);
+              setShowBlimp(false);
+            }}
+            className="relative w-14 h-14 rounded-full bg-gradient-to-br from-indigo-500 to-cyan-500 text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300"
+          >
+            {/* Red Dot */}
+            <span className="absolute top-1 right-1 w-3 h-3 bg-red-500 rounded-full border-2 border-white animate-pulse" />
+
+            <MessageCircle className="w-7 h-7" />
+          </button>
+        </div>
       )}
 
       {/* Chat Box */}
