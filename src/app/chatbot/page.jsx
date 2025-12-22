@@ -102,7 +102,7 @@ User Question: ${userText}`,
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gradient-to-br from-indigo-500 to-cyan-500 text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300"
+          className="fixed bottom-32 right-5 z-[999] w-14 h-14 rounded-full bg-gradient-to-br from-indigo-500 to-cyan-500 text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300"
         >
           <MessageCircle className="w-7 h-7" />
         </button>
@@ -110,7 +110,7 @@ User Question: ${userText}`,
 
       {/* Chat Box */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 z-50 w-72 md:w-85 h-[480px] bg-white rounded-3xl shadow-2xl flex flex-col overflow-hidden border border-gray-100 animate-in slide-in-from-bottom-5">
+        <div className="fixed bottom-24 right-6 z-[999] w-72 md:w-96 h-[480px] bg-white rounded-3xl shadow-2xl flex flex-col overflow-hidden border border-gray-100 animate-in slide-in-from-bottom-5">
           {/* Header */}
           <div className="bg-gradient-to-r from-indigo-600 to-cyan-500 p-4 flex items-center justify-between shadow-md">
             <div className="flex items-center gap-3">
