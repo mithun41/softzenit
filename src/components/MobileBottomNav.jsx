@@ -50,7 +50,7 @@ const MobileBottomNav = () => {
 
         {/* WhatsApp (last) */}
         <a
-          href="https://wa.me/8801622049579"
+          href="https://wa.me/8801797933772"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center text-gray-600 hover:text-green-600"
